@@ -14,9 +14,13 @@
 
 📊 Performance Metrics : 
 Mean Absolute Error (MAE): 4635.86
+
 Mean Squared Error (MSE): 95795938.91
+
 Root Mean Squared Error (RMSE): 9787.54
+
 R-squared (R2): 0.9423
+
 Prediction Accuracy: [Calculated Accuracy]%
 
 Working Project Video Link : https://drive.google.com/drive/folders/1yZ2BqNuvx5Pz8nFw-qijWXeBJKlgxCUh?usp=drive_link
