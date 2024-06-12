@@ -4,13 +4,13 @@
 
 🔧 Features : 
 
-🛠 Data Preprocessing: Handle missing values and encode categorical columns.
+1 -🛠 Data Preprocessing: Handle missing values and encode categorical columns.
 
-🤖 Model Training: Train Linear Regression, Decision Trees, Random Forest, and Gradient Boosting models.
+2 -🤖 Model Training: Train Linear Regression, Decision Trees, Random Forest, and Gradient Boosting models.
 
-📈 Model Evaluation: Evaluate models using MAE, MSE, RMSE, and R-squared.
+3 -📈 Model Evaluation: Evaluate models using MAE, MSE, RMSE, and R-squared.
 
-🏆 Best Model: Linear Regression with high prediction accuracy.
+4 -🏆 Best Model: Linear Regression with high prediction accuracy.
 
 
 
@@ -25,5 +25,7 @@
 *R-squared (R2): 0.9423
 
 *Prediction Accuracy: [Calculated Accuracy]%
+
+
 
 Working Project Video Link : https://drive.google.com/drive/folders/1yZ2BqNuvx5Pz8nFw-qijWXeBJKlgxCUh?usp=drive_link
