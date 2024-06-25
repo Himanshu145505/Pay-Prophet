@@ -69,8 +69,9 @@ r2_best = r2_score(y_test, y_pred_best)
 accuracy_best = calculate_accuracy(y_test, y_pred_best)
 
 
-# Printing Best
+# Printing Best Model Name
 print(f'Best Model: {best_model.__class__.__name__}')
+# Mean Absolute Error 
 print(f'Mean Absolute Error: {mae_best}')
 print(f'Mean Squared Error: {mse_best}')
 print(f'Root Mean Squared Error: {rmse_best}')
