@@ -1,4 +1,7 @@
+# importing pandas
 import pandas as pd
+
+# importing Machine learning models (Linear Regression, Decision Trees, Random Forest, etc)
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
