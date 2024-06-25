@@ -1,19 +1,21 @@
 # importing pandas
 import pandas as pd
 
-# importing Machine learning models (Linear Regression, Decision Trees, Random Forest, etc)
+# importing Required Machine learning Models (Linear Regression, Decision Trees, Random Forest, etc)
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score, root_mean_squared_error
 
+# Accuracy Calculating
 def calculate_accuracy(y_true, y_pred):
     mae = mean_absolute_error(y_true, y_pred)
     accuracy = ((y_true.mean() - mae) / y_true.mean()) * 100
     return accuracy
 
 # Load the dataset
+# This DataSet Contains Data of 2000+ employees it will be used for training and testing purposes
 data = pd.read_csv('Salary Prediction of Data Professions.csv')
 
 # Handle missing values for numeric columns only
