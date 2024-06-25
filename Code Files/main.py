@@ -75,6 +75,10 @@ print(f'Best Model: {best_model.__class__.__name__}')
 print(f'Mean Absolute Error: {mae_best}')
 # Mean Absolute Error MSE
 print(f'Mean Squared Error: {mse_best}')
+# Mean Root Error RMSE 
 print(f'Root Mean Squared Error: {rmse_best}')
+# F R Squared r_2 best 
 print(f'R-squared: {r2_best}')
+
+
 print(f'Prediction Accuracy: {accuracy_best:.2f}%')
