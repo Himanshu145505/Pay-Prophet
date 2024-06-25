@@ -35,6 +35,7 @@ X = data.drop(columns=['SALARY', 'FIRST NAME', 'LAST NAME', 'DOJ', 'CURRENT DATE
 y = data['SALARY']
 
 # Split the data into training and testing sets
+# Some Data will be used for training the ML models and some will be used for testing the model performance based on the accuracy and efficieny of the model the best suited will be chosen for showing the reuslt accuracy
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Train and evaluate the models
@@ -48,6 +49,7 @@ models = {
 best_model = None
 best_rmse = float('inf')  # Initialize with a high value
 
+# Models Training 
 for name, model in models.items():
     model.fit(X_train, y_train)
     y_pred = model.predict(X_test)
@@ -58,6 +60,7 @@ for name, model in models.items():
         best_rmse = rmse
 
 # Print the evaluation metrics for the best-performing model
+# All Models have performed there analysis all of them will be evaluated and then best will be chosen
 y_pred_best = best_model.predict(X_test)
 mae_best = mean_absolute_error(y_test, y_pred_best)
 mse_best = mean_squared_error(y_test, y_pred_best)
@@ -65,6 +68,8 @@ rmse_best = root_mean_squared_error(y_test, y_pred_best)
 r2_best = r2_score(y_test, y_pred_best)
 accuracy_best = calculate_accuracy(y_test, y_pred_best)
 
+
+# Printing Best
 print(f'Best Model: {best_model.__class__.__name__}')
 print(f'Mean Absolute Error: {mae_best}')
 print(f'Mean Squared Error: {mse_best}')
