@@ -64,6 +64,7 @@ for name, model in models.items():
 y_pred_best = best_model.predict(X_test)
 mae_best = mean_absolute_error(y_test, y_pred_best)
 mse_best = mean_squared_error(y_test, y_pred_best)
+# Score and Calculate Accuracy
 rmse_best = root_mean_squared_error(y_test, y_pred_best)
 r2_best = r2_score(y_test, y_pred_best)
 accuracy_best = calculate_accuracy(y_test, y_pred_best)
