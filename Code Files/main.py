@@ -3,7 +3,9 @@ import pandas as pd
 
 # importing Required Machine learning Models (Linear Regression, Decision Trees, Random Forest, etc)
 from sklearn.model_selection import train_test_split
+# Linear Regression
 from sklearn.linear_model import LinearRegression
+# Decision Trees 
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score, root_mean_squared_error
