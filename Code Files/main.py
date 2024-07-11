@@ -41,6 +41,7 @@ if 'SALARY' not in data.columns:
 
 # Split the data into features and target
 X = data.drop(columns=['SALARY', 'FIRST NAME', 'LAST NAME', 'DOJ', 'CURRENT DATE'])
+# Y Data
 y = data['SALARY']
 
 # Split the data into training and testing sets
@@ -49,6 +50,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 # Train and evaluate the models
 models = {
+    # Linear Regression 
     'Linear Regression': LinearRegression(),
     'Decision Tree': DecisionTreeRegressor(),
     'Random Forest': RandomForestRegressor(),
