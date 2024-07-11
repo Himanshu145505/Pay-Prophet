@@ -18,7 +18,7 @@ def calculate_accuracy(y_true, y_pred):
     mae = mean_absolute_error(y_true, y_pred)
     # Accuracy
     accuracy = ((y_true.mean() - mae) / y_true.mean()) * 100
-    # accuracy ret
+    # accuracy return
     return accuracy
 
 # Load the dataset
@@ -27,6 +27,7 @@ data = pd.read_csv('Salary Prediction of Data Professions.csv')
 
 # Handle missing values for numeric columns only
 numeric_cols = data.select_dtypes(include=['number']).columns
+# numeric cols
 data[numeric_cols] = data[numeric_cols].fillna(data[numeric_cols].mean())
 
 # One-hot encode categorical columns
@@ -34,6 +35,7 @@ data = pd.get_dummies(data, columns=['SEX', 'DESIGNATION', 'UNIT'])
 
 # Check if 'SALARY' column is present in the DataFrame
 if 'SALARY' not in data.columns:
+    # error message 
     print("Error: 'SALARY' column not found in the dataset.")
     exit(1)  # Exit the program with an error code
 
