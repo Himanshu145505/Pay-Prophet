@@ -56,6 +56,7 @@ models = {
     'Decision Tree': DecisionTreeRegressor(),
     # Random Forest
     'Random Forest': RandomForestRegressor(),
+    # Gradient Boosting
     'Gradient Boosting': GradientBoostingRegressor()
 }
 
