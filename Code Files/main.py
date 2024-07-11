@@ -14,8 +14,11 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score, r
 
 # Accuracy Calculating
 def calculate_accuracy(y_true, y_pred):
+    # mean absolute error
     mae = mean_absolute_error(y_true, y_pred)
+    # Accuracy
     accuracy = ((y_true.mean() - mae) / y_true.mean()) * 100
+    # accuracy ret
     return accuracy
 
 # Load the dataset
