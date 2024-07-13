@@ -59,12 +59,14 @@ models = {
     # Gradient Boosting
     'Gradient Boosting': GradientBoostingRegressor()
 }
-
+# best model initialized to None
 best_model = None
+
 best_rmse = float('inf')  # Initialize with a high value
 
 # Models Training 
 for name, model in models.items():
+    
     model.fit(X_train, y_train)
     y_pred = model.predict(X_test)
     rmse = root_mean_squared_error(y_test, y_pred)
