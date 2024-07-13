@@ -66,8 +66,9 @@ best_rmse = float('inf')  # Initialize with a high value
 
 # Models Training 
 for name, model in models.items():
-    
+    # X and Y Model 
     model.fit(X_train, y_train)
+    # Model Predict
     y_pred = model.predict(X_test)
     rmse = root_mean_squared_error(y_test, y_pred)
     
