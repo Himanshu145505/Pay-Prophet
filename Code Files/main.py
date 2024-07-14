@@ -74,6 +74,7 @@ for name, model in models.items():
     rmse = root_mean_squared_error(y_test, y_pred)
     
     if rmse < best_rmse:
+        # best model initialization
         best_model = model
         best_rmse = rmse
 
