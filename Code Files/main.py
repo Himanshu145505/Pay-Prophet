@@ -70,6 +70,7 @@ for name, model in models.items():
     model.fit(X_train, y_train)
     # Model Predict
     y_pred = model.predict(X_test)
+    # root_mean
     rmse = root_mean_squared_error(y_test, y_pred)
     
     if rmse < best_rmse:
