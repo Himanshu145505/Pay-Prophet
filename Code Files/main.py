@@ -80,7 +80,9 @@ for name, model in models.items():
 # Print the evaluation metrics for the best-performing model
 # All Models have performed there analysis all of them will be evaluated and then best will be chosen
 y_pred_best = best_model.predict(X_test)
+# mae best
 mae_best = mean_absolute_error(y_test, y_pred_best)
+# mse best
 mse_best = mean_squared_error(y_test, y_pred_best)
 # Score and Calculate Accuracy
 rmse_best = root_mean_squared_error(y_test, y_pred_best)
