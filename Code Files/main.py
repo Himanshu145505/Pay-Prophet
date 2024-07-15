@@ -37,6 +37,7 @@ data = pd.get_dummies(data, columns=['SEX', 'DESIGNATION', 'UNIT'])
 if 'SALARY' not in data.columns:
     # error message 
     print("Error: 'SALARY' column not found in the dataset.")
+    
     exit(1)  # Exit the program with an error code
 
 # Split the data into features and target
@@ -61,7 +62,7 @@ models = {
 }
 # best model initialized to None
 best_model = None
-
+# rmse inf
 best_rmse = float('inf')  # Initialize with a high value
 
 # Models Training 
@@ -76,6 +77,7 @@ for name, model in models.items():
     if rmse < best_rmse:
         # best model initialization
         best_model = model
+        # rmse 
         best_rmse = rmse
 
 # Print the evaluation metrics for the best-performing model
